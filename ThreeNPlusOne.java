@@ -22,7 +22,7 @@ public class ThreeNPlusOne {
                     } else {
                         temp = (temp * 3) + 1;
                     }
-                    count++;
+                    count += 1;
                 }
                 maxCycleLength = Math.max(maxCycleLength, count);
             }
