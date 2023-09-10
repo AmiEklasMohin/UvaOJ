@@ -1,14 +1,16 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class HashmatTheBraveWarrior {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNextLong()) {
-            long hashmatsArmySize = sc.nextLong();
-            long opponentsArmysize = sc.nextLong();
-            long diff = Math.abs(opponentsArmysize - hashmatsArmySize);
-            System.out.println(diff);
+        Scanner scanner = new Scanner(System.in);
+        long sizeOfHashmatsArmy, opponentsArmySize, absoluteDifference;
+        while (scanner.hasNextLong()) {
+            sizeOfHashmatsArmy = scanner.nextLong();
+            opponentsArmySize = scanner.nextLong();
+            absoluteDifference = Math.abs(sizeOfHashmatsArmy - opponentsArmySize);
+            System.out.println(absoluteDifference);
         }
-        sc.close();
+        scanner.close();
     }
 }
