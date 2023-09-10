@@ -2,9 +2,9 @@
 #include <cmath>
 
 int main() {
-    long sizeOfHashmatsArmy, opponentsArmySize, absoluteDifference;
-    while (std::cin >> sizeOfHashmatsArmy >> opponentsArmySize) {
-        absoluteDifference = std::abs(sizeOfHashmatsArmy - opponentsArmySize);
+    long sizeOfHashmatsArmy, sizeOfOpponentsArmy, absoluteDifference;
+    while (std::cin >> sizeOfHashmatsArmy >> sizeOfOpponentsArmy) {
+        absoluteDifference = std::abs(sizeOfHashmatsArmy - sizeOfOpponentsArmy);
         std::cout << absoluteDifference << std::endl;
     }
     return 0;
