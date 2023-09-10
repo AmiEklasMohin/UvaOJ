@@ -5,10 +5,10 @@ public class OddSum {
         Scanner sc = new Scanner(System.in);
         int testcase = sc.nextInt();
         for (int i = 1; i <= testcase; i++) {
-            int s = sc.nextInt();
-            int f = sc.nextInt();
+            int firstNumber = sc.nextInt();
+            int lastNumber = sc.nextInt();
             int oddSum = 0;
-            for (int j = s; j <= f; j++) {
+            for (int j = firstNumber; j <= lastNumber; j++) {
                 if (j % 2 == 1) {
                     oddSum += j;
                 }
