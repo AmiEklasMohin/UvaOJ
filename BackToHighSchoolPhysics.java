@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class BackToHighSchoolPhysics {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNext()) {
-            int velocity = sc.nextInt();
-            int time = sc.nextInt();
-            int displacement = 2 * velocity * time;
-            System.out.println(displacement);
+        Scanner scanner = new Scanner(System.in);
+        int givenVelocity, givenTime, displacementInDoubleTime;
+        while (scanner.hasNextInt()) {
+            givenVelocity = scanner.nextInt();
+            givenTime = scanner.nextInt();
+            displacementInDoubleTime = 2 * givenVelocity * givenTime;
+            System.out.println(displacementInDoubleTime);
         }
-        sc.close();
+        scanner.close();
     }
 }
