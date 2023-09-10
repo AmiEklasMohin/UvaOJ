@@ -1,18 +1,18 @@
-import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class CostCutting {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int testcase = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int testcase = scanner.nextInt();
+        int[] salaryList = new int[3];
         for (int i = 1; i <= testcase; i++) {
-            int[] arr = new int[3];
             for (int j = 0; j < 3; j++) {
-                arr[j] = sc.nextInt();
+                salaryList[j] = scanner.nextInt();
             }
-            Arrays.sort(arr);
-            System.out.println("Case " + i + ":" + " " + arr[1]);
+            Arrays.sort(salaryList);
+            System.out.println("Case " + i + ": " + salaryList[1]);
         }
-        sc.close();
+        scanner.close();
     }
 }
