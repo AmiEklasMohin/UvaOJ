@@ -1,14 +1,15 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main() {
-    string str;
-    while (getline(cin, str)) {
-        for (int i = 0; i < str.length(); i++) {
-            int x = str[i] - 7;
-            cout << (char)(x);
+    std::string encodedLine;
+    while (std::getline(std::cin, encodedLine)) {
+        std::string decodedLine = "";
+        for (int i = 0; i < encodedLine.length(); i++) {
+            int x = encodedLine[i] - 7;
+            decodedLine += (char) x;
         }
-        cout << endl;
+        std::cout << decodedLine << std::endl;
     }
     return 0;
 }
