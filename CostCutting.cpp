@@ -1,16 +1,15 @@
 #include <iostream>
 #include <algorithm>
-using namespace std;
+
 int main() {
-    int testcase;
-    cin >> testcase;
+    int testcase, salaryList[3];
+    std::cin >> testcase;
     for (int i = 1; i <= testcase; i++) {
-        int arr[3];
         for (int j = 0; j < 3; j++) {
-            cin >> arr[j];
+            std::cin >> salaryList[j];
         }
-        sort(arr, arr + 3);
-        cout << "Case " << i << ":" << " " << arr[1] << endl;
+        std::sort(salaryList, salaryList + 3);
+        std::cout << "Case " << i << ":" << " " << salaryList[1] << std::endl;
     }
     return 0;
 }
